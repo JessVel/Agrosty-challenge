@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="styles/dashboard.css" />
   </head>
   <body>
+
+
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg">
       <a class="navbar-brand" href="#">
@@ -68,7 +70,7 @@
                 aria-expanded="false"
               >
                 <img id="avatar" src="./imagenes/avatar.png" alt="avatar" />
-                Victor Luna
+                Juan Perez
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="#">Action</a>
@@ -82,7 +84,10 @@
       </div>
     </nav>
 
-    <div class="container mt-5">
+   
+
+  <section class="hero">
+    <div class="container main">
       <div class="row align-items-center">
         <div class="col-md-7 d-flex">
           <h2>Nueva observación</h2>
@@ -248,14 +253,14 @@
             </div>
 
             <div class="row p-3 from-group">
-              <div class="col">
+              <div class="col-md-auto">
                 <label for="reprogramacion" placeholder=""
                   ><ion-icon name="alert-circle-outline"></ion-icon>Resp
                   seguimiento y cierre</label
                 >
                 <input class="form-control" type="text" />
               </div>
-              <div class="col">
+              <div class="col-md-auto">
                 <label for="sector"
                   ><ion-icon name="alert-circle-outline"></ion-icon>Sector que
                   detecta las observaciones</label
@@ -266,7 +271,7 @@
                   >
                 </select>
               </div>
-              <div class="col">
+              <div class="col-md-auto">
                 <label for="sector"
                   ><ion-icon name="alert-circle-outline"></ion-icon>Sector
                   responsable</label
@@ -277,7 +282,7 @@
                   >
                 </select>
               </div>
-              <div class="col d-block">
+              <div class="col">
                 <label for="reprogramacion" placeholder=""
                   ><ion-icon name="alert-circle-outline"></ion-icon
                   >Observacion</label
@@ -313,6 +318,7 @@
         </div>
       </section>
     </div>
+  </section>
 
     <!-- Ionic icon -->
     <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
