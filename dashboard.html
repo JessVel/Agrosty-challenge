@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <!-- Costum Styles -->
+    <link rel="stylesheet" href="styles/dashboard.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand" href="#">
+        <img
+          class="img-fluid"
+          id="logo"
+          src="./imagenes/logo_agro.png"
+          alt="logo-agrosty"
+      /></a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <ion-icon class="menu-icon" name="menu-sharp"></ion-icon>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item disabled">
+            <a class="nav-link" href="#"
+              >Dashboard <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Listado</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">informes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Opciones</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+          <div class="container avatar-container">
+            <li class="nav-item dropdown ml-auto">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <img id="avatar" src="./imagenes/avatar.png" alt="avatar" />
+                Victor Luna
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+          </div>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container mt-5">
+      <div class="row align-items-center">
+        <div class="col-md-7 d-flex">
+          <h2>Nueva observación</h2>
+        </div>
+        <div class="col-md-5 d-flex">
+          <button class="btn btn-outline-dark">Volver</button>
+          <button class="btn btn-primary align-self-center">
+            Guardar observación
+          </button>
+        </div>
+      </div>
+      <hr />
+      <section>
+        <div class="container flex">
+          <form action="post">
+            <div class="row p-3">
+              <div class="col from-group">
+                <label for="id-action"
+                  ><ion-icon name="alert-circle-outline"></ion-icon>ID
+                  acción</label
+                >
+                <input class="form-control" type="text" id="id-action" />
+              </div>
+
+              <div class="col from-group">
+                <label for="fecha"
+                  ><ion-icon name="alert-circle-outline"></ion-icon>Fecha</label
+                >
+                <input
+                  class="form-control"
+                  type="text"
+                  placeholder="dd/mm/aa"
+                />
+              </div>
+
+              <div class="col from-group">
+                <label for="sector"
+                  ><ion-icon name="alert-circle-outline"></ion-icon
+                  >Sector</label
+                >
+                <select class="form-control" name="Galpon" id="Sector">
+                  <option class="form-control" value="Galpon 5"
+                    >Galpón 5</option
+                  >
+                </select>
+              </div>
+
+              <div class="col-md-auto from-group">
+                <label for="sector" text-left
+                  ><ion-icon name="alert-circle-outline"></ion-icon>Riesgo
+                  asociado/Estándar</label
+                >
+                <select class="form-control" name="Galpon" id="Sector">
+                  <option class="form-control" value="Galpon 5"
+                    >Galpón 5</option
+                  >
+                </select>
+              </div>
+
+              <div class="col from-group">
+                <label for="sector"
+                  ><ion-icon name="alert-circle-outline"></ion-icon>Nivel de
+                  riesgo</label
+                >
+                <select class="form-control" name="Galpon" id="Sector">
+                  <option class="form-control" value="Galpon 5"
+                    >Galpón 5</option
+                  >
+                </select>
+              </div>
+
+              <div class="col from-group">
+                <label for="sector"
+                  ><ion-icon name="alert-circle-outline"></ion-icon>Generado
+                  por</label
+                >
+                <select class="form-control" name="Galpon" id="Sector">
+                  <option class="form-control" value="Galpon 5"
+                    >Galpón 5</option
+                  >
+                </select>
+              </div>
+            </div>
+
+            <div class="row p-3">
+              <div class="col from-group">
+                <label for="accion-correctiva"
+                  ><ion-icon name="alert-circle-outline"></ion-icon>Acción
+                  correctiva</label
+                >
+                <textarea
+                  class="form-control"
+                  name="mensaje"
+                  id="mensaje"
+                ></textarea>
+              </div>
+
+              <div class="col from-group">
+                <label for="accion-correctiva"
+                  ><ion-icon name="alert-circle-outline"></ion-icon>Acción
+                  correctiva</label
+                >
+                <textarea
+                  class="form-control"
+                  name="mensaje"
+                  id="mensaje"
+                ></textarea>
+              </div>
+
+              <div class="col from-group">
+                <label for="accion-correctiva"
+                  ><ion-icon name="alert-circle-outline"></ion-icon>Acción
+                  correctiva</label
+                >
+                <textarea
+                  class="form-control"
+                  name="mensaje"
+                  id="mensaje"
+                ></textarea>
+              </div>
+            </div>
+
+            <div class="row p-3 from-group">
+              <div class="col">
+                <label for="plazo"
+                  ><ion-icon name="alert-circle-outline"></ion-icon>Plazo
+                  ejecución inicial</label
+                >
+                <input class="form-control" type="date" />
+              </div>
+              <div class="col">
+                <label for="reprogramacion" placeholder="Pedro Raul"
+                  ><ion-icon name="alert-circle-outline"></ion-icon
+                  >Reprogramacion</label
+                >
+                <input class="form-control" type="text" />
+              </div>
+              <div class="col">
+                <label for="sector"
+                  ><ion-icon name="alert-circle-outline"></ion-icon>Generado
+                  por</label
+                >
+                <select class="form-control" name="Galpon" id="Sector">
+                  <option class="form-control" value="Galpon 5"
+                    >CUMPLIDO</option
+                  >
+                </select>
+              </div>
+              <div class="col">
+                <label for="reprogramacion" placeholder="Pedro Raul"
+                  ><ion-icon name="alert-circle-outline"></ion-icon>Fecha de
+                  cierre</label
+                >
+                <input class="form-control" type="text" />
+              </div>
+              <div class="col">
+                <label for="reprogramacion" placeholder="Cumplida"
+                  ><ion-icon name="alert-circle-outline"></ion-icon
+                  >Vencimiento</label
+                >
+                <input class="form-control" type="text" />
+              </div>
+            </div>
+
+            <div class="row p-3 from-group">
+              <div class="col">
+                <label for="reprogramacion" placeholder=""
+                  ><ion-icon name="alert-circle-outline"></ion-icon>Resp
+                  seguimiento y cierre</label
+                >
+                <input class="form-control" type="text" />
+              </div>
+              <div class="col">
+                <label for="sector"
+                  ><ion-icon name="alert-circle-outline"></ion-icon>Sector que
+                  detecta las observaciones</label
+                >
+                <select class="form-control" name="Galpon" id="Sector">
+                  <option class="form-control" value="Galpon 5"
+                    >CUMPLIDO</option
+                  >
+                </select>
+              </div>
+              <div class="col">
+                <label for="sector"
+                  ><ion-icon name="alert-circle-outline"></ion-icon>Sector
+                  responsable</label
+                >
+                <select class="form-control" name="Galpon" id="Sector">
+                  <option class="form-control" value="Galpon 5"
+                    >CUMPLIDO</option
+                  >
+                </select>
+              </div>
+              <div class="col d-block">
+                <label for="reprogramacion" placeholder=""
+                  ><ion-icon name="alert-circle-outline"></ion-icon
+                  >Observacion</label
+                >
+                <input class="form-control" type="text" />
+              </div>
+              <div class="col">
+                <label for="reprogramacion" placeholder=""
+                  ><ion-icon name="alert-circle-outline"></ion-icon>Requiere
+                  evidencia</label
+                >
+                <input class="form-control" type="text" />
+              </div>
+            </div>
+
+            <div class="row p-3">
+              <div class="col">
+                <label for="reprogramacion" placeholder=""
+                  ><ion-icon name="alert-circle-outline"></ion-icon>Evidencia de
+                  cierre</label
+                >
+                <input class="form-control" type="text" />
+              </div>
+              <div class="col">
+                <label for="reprogramacion" placeholder=""
+                  ><ion-icon name="alert-circle-outline"></ion-icon>Respuesta
+                  seguimiento y cierre</label
+                >
+                <input class="form-control" type="text" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+
+    <!-- Ionic icon -->
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+
+    <!-- Bootstrap -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
