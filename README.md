@@ -2,4 +2,4 @@
 
 ## Objetivo
 
-![ScreenShot](https://raw.github.com/JessVel/Agrosty-challenge/design/pantalla1.png) 
+![ScreenShot](https://wwww.github.com/JessVel/Agrosty-challenge/master/design/pantalla1.png) 
