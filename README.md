@@ -8,5 +8,5 @@
 ## Resultado
 
 ![ScreenShot](https://raw.github.com/JessVel/Agrosty-challenge/master/design/screenshots/pant1.png)
-![ScreenShot](https://raw.github.com/JessVel/Agrosty-challenge/master/design/login.png) 
+![ScreenShot](https://raw.github.com/JessVel/Agrosty-challenge/master/design/screenshots/login.png) 
 
